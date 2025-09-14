@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php 
-// Giải phương trình bậc 1
+
 function giai_pt_bac_1($a, $b) {
     if ($a == 0) {
         if ($b == 0) 
@@ -19,10 +19,10 @@ function giai_pt_bac_1($a, $b) {
     }
 }
 
-// Giải phương trình bậc 2
+
 function giai_pt_bac_2($a, $b, $c) {
     if ($a == 0) {
-        // thực chất trở thành bậc 1
+        
         return giai_pt_bac_1($b, $c);
     } else {
         $delta = pow($b, 2) - 4 * $a * $c;

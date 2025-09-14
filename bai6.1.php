@@ -22,7 +22,7 @@ if (isset($_POST['btn_goi'])) {
         $n = count($mang_so); 
         $ket_qua = 0;
         for ($i = 0; $i < $n; $i++) { 
-            $so = trim($mang_so[$i]); // bỏ khoảng trắng
+            $so = trim($mang_so[$i]); 
             if (is_numeric($so)) {
                 $ket_qua += $so;
             }

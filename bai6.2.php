@@ -63,7 +63,7 @@ function tinh_tong($mang_so){
     return $tong;
 }
 
-// --- Khi bấm nút ---
+
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["so_phan_tu"])) {
     $n = intval($_POST["so_phan_tu"]);
     if ($n > 0) {
