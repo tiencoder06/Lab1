@@ -18,22 +18,21 @@ $so_lan = [];
 $chuoi = "";
 
 if (isset($_POST['nhap_mang']) && $_POST['nhap_mang'] !== "") {
-    // Tách mảng từ chuỗi nhập
+
     $mang_so = explode(",", $_POST['nhap_mang']);
 
-    // Xóa trùng lặp
+   
     $mang_duy_nhat = array_unique($mang_so);
 
-    // Đếm số lần xuất hiện
+    
     $so_lan = array_count_values($mang_so);
 
-    // Tạo chuỗi số lần xuất hiện
     foreach($so_lan as $key => $value){
         $chuoi .= trim($key) . ":" . $value . " ";
     }
 }
 
-// Hàm in ra mảng duy nhất
+
 function mang_duy_nhat($mang_so){
     if (!empty($mang_so)){
         return implode(", ", $mang_so);
